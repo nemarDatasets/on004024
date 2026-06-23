@@ -20,9 +20,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D050781"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "EEG"
     },
     {
       "term": "Motor Cortex",
