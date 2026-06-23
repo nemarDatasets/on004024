@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004024",
-  "source": "openneuro",
-  "source_id": "ds004024",
+  "pipeline_stage": "validated",
   "title": "TMS-EEG-MRI-fMRI-DWI data on paired associative stimulation and connectivity (Shirley Ryan AbilityLab, Chicago, IL)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Julio Cesar Hernandez Pavon": {},
     "Nils Schneider Garces": {},
@@ -11,33 +11,90 @@
     "Lee Miller": {},
     "Tommi Raij": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004024.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004024",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004024",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.6.0",
-  "recording_modality": [
-    "anat",
-    "dwi",
-    "eeg",
-    "func"
-  ],
-  "datatypes": [
-    "anat",
-    "dwi",
-    "eeg",
-    "func"
   ],
   "funding_references": [
     {
       "funder_name": "Dr. Ralph and Marian Falk Medical Research Trust"
     }
   ],
-  "acknowledgements": "We thank Mainak Jas for expert advice on BIDS."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg",
+    "anat",
+    "func",
+    "dwi"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".bval",
+    ".bvec",
+    ".eeg",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises multimodal neuroimaging data from a bifocal transcranial magnetic stimulation (TMS) study investigating cortico-cortical paired associative stimulation (ccPAS) and brain connectivity. Participants underwent TMS-EEG recordings targeting bilateral primary motor cortex with varying interstimulus intervals (4, 9, or 14 ms), combined with structural and functional MRI acquisitions. The study examines spike-timing-dependent plasticity mechanisms for modulating interregional effective connectivity in the human brain.",
+  "methods_description": "Data collection involved MRI-navigated bifocal TMS-EEG sessions with 64-channel EEG recorded in DC mode (right mastoid reference). ccPAS was delivered with left M1 stimulation at t=0 ms followed by right M1 stimulation at asynchronies of 4, 9, or 14 ms across three sessions. Single-pulse TMS (spTMS) was applied at 100% or 110% resting motor threshold before and after ccPAS (10 and 60 minutes post-stimulation). Resting-state EEG and structural MRI (T1w) were acquired from all subjects; some subjects additionally received resting-state fMRI and high-angular-resolution diffusion imaging (HARDI, 271 directions).",
+  "keywords": [
+    {
+      "term": "Transcranial Magnetic Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D050781"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Motor Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009044"
+    },
+    {
+      "term": "paired associative stimulation"
+    },
+    {
+      "term": "neuroplasticity"
+    },
+    {
+      "term": "functional connectivity"
+    },
+    {
+      "term": "diffusion weighted imaging"
+    }
+  ],
+  "source_hash": "e2169e9a3909d871d9695b21c704c75d8a3864c54524a4a362f673c00d898995"
 }
